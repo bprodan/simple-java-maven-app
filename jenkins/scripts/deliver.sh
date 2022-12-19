@@ -29,4 +29,4 @@ java -jar target/${NAME}-${VERSION}.jar
 
 echo 'The following command copy jar to artifactory'
 set -x
-curl -sSf -u "admin:password" -X PUT -T target/${NAME}-${VERSION}.jar 'http://172.18.0.4:8081/artifactory/simple/ext-release-local/b/b/b/vvv.jar'
+curl -sSf -u "admin:password" -X PUT -T target/${NAME}-${VERSION}.jar 'http://172.18.0.4:8080/artifactory/simple/ext-release-local/b/b/b/vvv.jar'
